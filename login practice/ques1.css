@@ -1,60 +1,77 @@
-*{
-  margin:0;
-  padding:0;
-  font-family: 'Poppins', sans-serif;
+body {
+    margin: 0;
+    background-color: #ffdda0;
+    font-family: Arial, sans-serif;
 }
-body{
-  background-color:rgba(235, 202, 159, 0.928);
-  height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
-.login-container{
-  padding:130px;
-  width: 200px;px;
-  background-color:white;
-  text-align:center;
 
+/* Main white box */
+.login-box {
+    width: 630px;
+    background-color: white;
+    margin: 90px auto;
+    padding: 30px;
+    text-align: center;
+    box-sizing: border-box;
 }
-.image{
-  text-align:center;
-  margin-bottom:20px;
+
+/* Image */
+.image {
+    margin-bottom: 30px;
 }
-.image img{
-  text-align:center;
-  width:200px;
-  height:200px;
-  border-radius:50%;
+
+.image img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
 }
-h1{
-  text-align: center;
-  padding: 20px;
-  color: rgba(255, 79, 15, 0.874);
+
+/* Heading */
+h1 {
+    font-size: 36px;
+    margin-bottom: 45px;
 }
-input{
-  height: 40px;
-  width: 240%;
-  padding-left: 3%;
-  margin-bottom: 25px;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  background-color: rgba(255,255,255,0.404);
-  box-shadow: 3px 3px 10px rgba(0,0,0,0.213);
-  font-size: 16px;
+
+/* Input boxes */
+input {
+    width: 90%;
+    padding: 22px;
+    margin-bottom: 18px;
+    border: none;
+    border-radius: 20px;
+    background-color: #eeeeee;
+    font-size: 20px;
+    box-sizing: border-box;
 }
-button{
-  height: 40px;
-  width: 100px;
-  margin-bottom: 3%;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  background-color: rgb(238,69,8);
-  box-shadow: 3px 3px 10px rgba(0,0,0,0.213);
-  color: white;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: bold;
+
+input::placeholder {
+    color: #777777;
+}
+
+/* Login button */
+button {
+    width: 75%;
+    padding: 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #ffe9ae;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Forgot Password */
+a {
+    display: block;
+    margin: 35px;
+    color: #d8ae4b;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Horizontal line */
+hr {
+    border: none;
+    border-top: 2px solid black;
 }
