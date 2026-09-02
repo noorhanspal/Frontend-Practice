@@ -117,10 +117,86 @@ body
     border-radius: 8px;
     text-decoration: none;
     color: #159b74;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 .social-icons a:hover 
 {
     background: #159b74;
     color: white;
+    transform : translateY(-10px)
+}
+.contact-form
+{
+    padding:40px;
+}
+.contact-form h2
+{
+    font-size:28px;
+    margin-bottom:25px;
+}
+.form-row
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+}
+.form-group
+{
+    margin-bottom:20px;
+}
+.form-group label
+{
+    display:block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.form-control
+{
+    width:100%;
+    padding: 13px 15px;
+    border:1px solid #d6e7e2;
+    outline:none;
+    font-size: 14px;
+    font-family: inherit;
+    background: #fbfefd;
+}
+.form-control:focus
+{
+    border-color: #159b74;
+}
+textarea.form-control
+{
+    height: 130px;
+    resize: none;
+}
+.submit-btn
+{
+    padding: 13px 25px;
+    border:none;
+    background: #159b74;
+    color: white;
+    border-radius: 8px;
+    font-family: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.submit-btn:hover
+{
+    background-color: #107a5c;
+}
+.submit-btn i
+{
+    margin-left: 6px;
+}
+@media(max-width:800px)
+{
+    .contact-wrapper
+    {
+        grid-template-columns: 1fr;
+    }
+    .contact-info,.contact-form
+    {
+        padding:30px;
+    }
 }
