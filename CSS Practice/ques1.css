@@ -1,11 +1,13 @@
 .container
 {
   height: 300px;
+  width: 500px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   border:2px solid black;
   margin:30px;
-  gap: 20px;
-  justify-content: center;
+  gap: 30px;
+  justify-content: space-evenly;
 }
