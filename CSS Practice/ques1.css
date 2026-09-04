@@ -1,7 +1,6 @@
 .container
 {
-  height: 300px;
-  width: 500px;
+  height: 200px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

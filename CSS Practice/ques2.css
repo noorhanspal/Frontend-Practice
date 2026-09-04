@@ -1,0 +1,14 @@
+.container
+{
+  height: 300px;
+  display:flex;
+  border: 2px solid black;
+  align-items: center;
+  gap:25px;
+}
+.card
+{
+  height: 100px;
+  width: 150px;
+  border: 2px solid black;
+}
