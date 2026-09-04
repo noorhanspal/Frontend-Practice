@@ -1,0 +1,14 @@
+.card
+{
+  width: 300px;
+  height: 200px;
+  border: 2px solid black;
+  position: relative;
+  padding: 20px;
+}
+.sale
+{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
