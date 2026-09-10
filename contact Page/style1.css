@@ -101,3 +101,10 @@ button
   text-transform: uppercase;
 
 }
+button:hover
+{
+  background: #1965ad;
+  transition: 0.5s;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
