@@ -9,4 +9,95 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(135deg, #eb70b6 0%, #4688b3 50%, #6e318f 100%);
+}
+.main {
+  width: 750px;
+  height: 600px;
+  display: flex;
+  background:transparent;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(200px);
+}
+.left {
+  width: 50%;
+  height: 100%;
+  border-radius: 20px 0px 0px 20px;
+  padding: 30px;
+}
+.right {
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  border-radius: 0px 20px 20px 0px;
+
+  
+}
+.Chat
+{
+  font-size: 50px;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.left p
+{
+  
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 30px;
+  
+}
+.Contact
+{
+  font-size: 40px;
+  color: #8b1583;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  padding-left: 20px;
+}
+.req
+{
+  font-size: 15px;
+  color: #8b1583;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+form
+{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+}
+input
+{
+  width: 90%;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #8b1583;
+  padding-left: 10px;
+}
+textarea
+{
+  width: 90%;
+  height: 90px;
+  border-radius: 10px;
+  border: 1px solid #8b1583;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+button
+{
+  width: 50%;
+  height: 40px;
+  border-radius: 10px;
+  background: #8b1583;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  text-transform: uppercase;
+
 }
