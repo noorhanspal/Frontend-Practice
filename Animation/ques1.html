@@ -1,46 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Animation</title>
-</head>
-<style>
-*
-{
-  margin: 0;
-  padding: 0;
-}
-body
-{
-    height: 100vh;
-    background-image: url(img4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    animation: animate 10s linear infinite;
-  }
-@keyframes animate
-  {
-    0%{
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animation</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      height: 100vh;
       background-image: url(img4.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      animation: animate 10s linear infinite;
     }
-    25%{
-      background-image: url(img5.jpg);
+    @keyframes animate {
+      0% {
+        background-image: url(img4.jpg);
+      }
+      25% {
+        background-image: url(img5.jpg);
+      }
+      50% {
+        background-image: url(img1.jpg);
+      }
+      75% {
+        background-image: url(img2.jpg);
+      }
+      100% {
+        background-image: url(img3.jpg);
+      }
     }
-    50%{
-      background-image: url(img1.jpg);
+    .main {
+      height: 100px;
+      width: 100px;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0px 0px 10px 1px white;
+      position: relative;
+      animation: move 5s linear infinite; 
     }
-    75%{
-      background-image: url(img2.jpg);
+    @keyframes move{
+      0%
+      {
+        top: 0;
+        left: 0;
+      }
+      25%
+      {
+        top:0;
+        left: 400px;
+      }
+      50%
+      {
+        top:400px;
+        left:400px;
+      }
+      75%
+      {
+        top:400px;
+        left: 0;
+      }
+      100%
+      {
+        top: 0;
+        left: 0;
+      }
     }
-    100%{
-      background-image: url(img3.jpg);
-    }
-  }
-
-</style>
-<body>
-  <div class="main"></div>
-</body>
+  </style>
+  <body>
+    <div class="main"></div>
+  </body>
 </html>
