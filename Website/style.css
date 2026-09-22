@@ -45,5 +45,50 @@ a
 {
   text-decoration: none;
   color: white;
-  font-weight: 50%;
+  font-weight: 500;
+}
+.main
+{
+  width: 90%;
+  max-width: 1000px;
+  max-height: 500px;
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
+  
+}
+.content
+{
+  width: 40%;
+  height: 100%;
+  color: white;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+section .image
+{
+  width: 50%;
+  height: 500px;
+  
+}
+.image img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.h1
+{
+  text-transform:uppercase;
+  font-size: 50px;
+}
+.about
+{
+  min-height: 100vh;
+  background-image: url(img1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
