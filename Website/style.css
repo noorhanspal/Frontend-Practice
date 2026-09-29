@@ -84,6 +84,7 @@ section .image
   text-transform:uppercase;
   font-size: 50px;
 }
+/* aboutpage */
 .about
 {
   min-height: 100vh;
@@ -91,4 +92,5 @@ section .image
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.2;
 }

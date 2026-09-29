@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Calculator</title>
+</head>
+<style>
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  font-family: 'Times New Roman', Times, serif;
+  background: #EEAECA;
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 81%);
+
+}
+.box
+{
+  background-color: rgba(128, 128, 128, 0.2);
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  margin-top: 120px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(227, 212, 212, 0.638);
+  padding: 20px;
+
+}
+h1
+{
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+input
+{
+  display: flex;
+  width: 80%;
+  height: 40px;
+  border-radius: 7px;
+  border: none;
+  background-color: rgba(128, 128, 128, 0.1);
+  box-shadow: 0 0 20px rgba(196, 183, 183, 0.797);
+  margin-left: 30px;
+  padding: 10px;
+
+}
+input:focus
+{
+  outline: none;
+}
+#first
+{
+  margin-bottom: 10px;
+}
+#second
+{
+  margin-bottom: 30px;
+}
+button{
+  width: 30px;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  background-color: rgba(129, 125, 125, 0.181);
+  transition: 0.3s;
+  margin-left: 10px;
+}
+button:hover
+{
+  transform: scale(1.2);
+  background-color: black;
+  color: white;
+}
+button:focus
+{
+  background-color: black;
+  color: white;
+}
+.btn
+{
+  margin-left: 70px;
+  margin-bottom: 60px;
+}
+#res
+{
+  background-color: black;
+  color: white;
+  width: 40%;
+  height: 40px;
+  border-radius: 7px;
+  padding: 10px;
+  margin-left: 90px;
+  font-size: 20px;
+}
+</style>
+<body>
+<div class="box">
+  <h1>Mini Calculator</h1>
+  <input type="text" placeholder="Enter First Number" id="first">
+  <input type="text" placeholder="Enter Second Number" id="second">
+  <div class="btn">
+  <button onclick="check()">+</button>
+  <button onclick="check1()">-</button>
+  <button onclick="check2()">*</button>
+  <button onclick="check3()">/</button>
+  </div>
+  <p id="res">Result</p>
+</div>
+<script>
+  function check()
+  {
+    no1 = parseInt(document.getElementById("first").value)
+    no2 = parseInt(document.getElementById("second").value)
+    add=no1+no2
+    document.getElementById("res").innerHTML=add
+  }
+  function check1()
+  {
+    no1 = parseInt(document.getElementById("first").value)
+    no2 = parseInt(document.getElementById("second").value)
+    sub=no1-no2
+    document.getElementById("res").innerHTML=sub
+  }
+  function check2()
+  {
+    no1 = parseInt(document.getElementById("first").value)
+    no2 = parseInt(document.getElementById("second").value)
+    mul=no1*no2
+    document.getElementById("res").innerHTML=mul
+  }
+  function check3()
+  {
+    no1 = parseInt(document.getElementById("first").value)
+    no2 = parseInt(document.getElementById("second").value)
+    div=no1/no2
+    document.getElementById("res").innerHTML=div
+  }
+</script>
+</body>
+</html>
